@@ -30,4 +30,4 @@ wget -O /root/filemanager.ipk https://raw.githubusercontent.com/sukoco93/skc93/m
 
 #fix-editor
 
-wget -O /usr/lib/lua/luci/view/openclash/oceditor.htm https://raw.githubusercontent.com/sukoco93/skc93/main/oceditor.htm && wget -O /usr/lib/lua/luci/controller/openclash.lua https://raw.githubusercontent.com/sukoco93/skc93/main/openclash.lua && wget -O /www/tinyfm/oceditor.php https://raw.githubusercontent.com/sukoco93/skc93/main/oceditor.php && cd /www/tinyfm && ln -s /etc/openclash
+wget -O /usr/lib/lua/luci/view/openclash/oceditor.htm https://raw.githubusercontent.com/sukoco93/skc93/main/oceditor.htm && wget -O /usr/lib/lua/luci/controller/openclash.lua https://raw.githubusercontent.com/sukoco93/skc93/main/openclash.lua && mkdir /www/tinyfm && cd /www/tinyfm && ln -s /etc/openclash && wget -O /www/tinyfm/oceditor.php https://raw.githubusercontent.com/sukoco93/skc93/main/oceditor.php 
