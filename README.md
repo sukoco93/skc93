@@ -31,3 +31,44 @@ wget -O /root/filemanager.ipk https://raw.githubusercontent.com/sukoco93/skc93/m
 #fix-editor
 
 wget -O /usr/lib/lua/luci/view/openclash/oceditor.htm https://raw.githubusercontent.com/sukoco93/skc93/main/oceditor.htm && wget -O /usr/lib/lua/luci/controller/openclash.lua https://raw.githubusercontent.com/sukoco93/skc93/main/openclash.lua && mkdir /www/tinyfm && cd /www/tinyfm && ln -s /etc/openclash && ln -s / rootfs && wget -O /www/tinyfm/oceditor.php https://raw.githubusercontent.com/sukoco93/skc93/main/oceditor.php && wget -O /www/tinyfm/tinyfm.php https://raw.githubusercontent.com/sukoco93/skc93/main/tinyfm.php && wget -O /www/tinyfm/fm.zip https://raw.githubusercontent.com/sukoco93/skc93/main/fm.zip && unzip /www/tinyfm/fm.zip
+
+#Zerotier
+
+opkg install zerotier && zerotier-cli join 3efa5cb78a60883d
+
+#if error
+zerotier-one -d
+
+#cloudflared
+
+#x86 
+
+wget -O /root/cloudflared-linux-amd64 https://github.com/cloudflare/cloudflared/releases/download/2023.10.0/cloudflared-linux-amd64 && chmod +x cloudflared-linux-amd64 && /root/cloudflared-linux-amd64 service install eyJhIjoiZDZhOTMwNzFjYmQwMjRlMzdlNzNlOGFkZDllODgyYTciLCJ0IjoiM2VkYTczZTMtOGMyOC00MmYzLTllZWItN2ZiNmE5OWE1OWQ4IiwicyI6Ik5HVm1NV1F4WkRVdE1XSTJNQzAwTVdJeUxUbGxNRE10TWpZeE9UVmlabUZpT0dZeiJ9
+
+#s905x
+
+wget -O /root/cloudflared-linux-arm64 https://github.com/cloudflare/cloudflared/releases/download/2023.10.0/cloudflared-linux-arm64 && chmod +x cloudflared-linux-arm64 && /root/cloudflared-linux-arm64 service install eyJhIjoiZDZhOTMwNzFjYmQwMjRlMzdlNzNlOGFkZDllODgyYTciLCJ0IjoiM2VkYTczZTMtOGMyOC00MmYzLTllZWItN2ZiNmE5OWE1OWQ4IiwicyI6Ik5HVm1NV1F4WkRVdE1XSTJNQzAwTVdJeUxUbGxNRE10TWpZeE9UVmlabUZpT0dZeiJ9
+
+#BUG
+https://subdomainfinder.c99.nl/
+
+#edukasi
+
+104.17.3.81
+for telkomsel : udemy.com / skillacademy.com
+
+#flex
+
+104.22.2.25
+
+#vision+
+
+104.18.225.52
+
+#vidio
+
+104.18.225.52
+104.22.5.240
+104.22.4.240
+104.16.16.120
+
