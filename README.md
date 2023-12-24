@@ -13,7 +13,7 @@ wget -O /root/passwall2.ipk https://github.com/xiaorouji/openwrt-passwall2/relea
 
 #release ram
 
-wget -P /root "https://raw.githubusercontent.com/sukoco93/skc93/main/free.sh" && chmod +x /root/free.sh && mv /root/free.sh /sbin && sed -i '$ i\*/5 * * * * /sbin/free.sh' /etc/crontabs/root && chmod 755 /etc/crontabs/root && /etc/init.d/cron restart && rm -rf /usr/lib/lua/luci/controller/release_ram.lua && wget -O /usr/lib/lua/luci/controller/release_ram.lua https://raw.githubusercontent.com/sukoco93/skc93/main/openclash.lua
+wget -P /root "https://raw.githubusercontent.com/sukoco93/skc93/main/free.sh" && chmod +x /root/free.sh && mv /root/free.sh /sbin && sed -i '$ i\*/5 * * * * /sbin/free.sh' /etc/crontabs/root && chmod 755 /etc/crontabs/root && /etc/init.d/cron restart && rm -rf /usr/lib/lua/luci/controller/release_ram.lua && wget -O /usr/lib/lua/luci/controller/release_ram.lua https://raw.githubusercontent.com/sukoco93/skc93/main/release_ram.lua
 
 #Speedtest-CLI
 -s905x
@@ -31,3 +31,6 @@ wget -O /root/filemanager.ipk https://raw.githubusercontent.com/sukoco93/skc93/m
 #fix-editor
 
 rm -rf /usr/lib/lua/luci/view/openclash/oceditor.htm && wget -O /usr/lib/lua/luci/view/openclash/oceditor.htm https://raw.githubusercontent.com/sukoco93/skc93/main/oceditor.htm && rm -rf /usr/lib/lua/luci/controller/openclash.lua && wget -O /usr/lib/lua/luci/controller/openclash.lua https://raw.githubusercontent.com/sukoco93/skc93/main/openclash.lua
+
+#tinyfm
+wget -O /usr/lib/lua/luci/controller/tinyfm.lua https://raw.githubusercontent.com/sukoco93/skc93/main/tinyfm.lua && mkdir /www/tinyfm && cd /www/tinyfm && ln -s / rootfs && ln -s /etc/openclash && wget -O /www/tinyfm/fm.zip https://raw.githubusercontent.com/sukoco93/skc93/main/fm.zip && unzip fm.zip
