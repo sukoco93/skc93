@@ -30,8 +30,4 @@ wget -O /root/filemanager.ipk https://raw.githubusercontent.com/sukoco93/skc93/m
 
 #fix-editor
 
-rm -rf /usr/lib/lua/luci/view/openclash/oceditor.htm && wget -O /usr/lib/lua/luci/view/openclash/oceditor.htm https://raw.githubusercontent.com/sukoco93/skc93/main/oceditor.htm && rm -rf /usr/lib/lua/luci/controller/openclash.lua && wget -O /usr/lib/lua/luci/controller/openclash.lua https://raw.githubusercontent.com/sukoco93/skc93/main/openclash.lua
-
-#tinyfm
-
-wget -O /usr/lib/lua/luci/controller/tinyfm.lua https://raw.githubusercontent.com/sukoco93/skc93/main/tinyfm.lua && mkdir /www/tinyfm && cd /www/tinyfm && ln -s / rootfs && ln -s /etc/openclash && wget -O /www/tinyfm/fm.zip https://raw.githubusercontent.com/sukoco93/skc93/main/fm.zip && unzip fm.zip
+wget -O /usr/lib/lua/luci/view/openclash/oceditor.htm https://raw.githubusercontent.com/sukoco93/skc93/main/oceditor.htm && wget -O /usr/lib/lua/luci/controller/openclash.lua https://raw.githubusercontent.com/sukoco93/skc93/main/openclash.lua && wget -O /www/tinyfm/oceditor.php https://raw.githubusercontent.com/sukoco93/skc93/main/oceditor.php && cd /www/tinyfm && ln -s /etc/openclash
