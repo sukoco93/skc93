@@ -13,7 +13,7 @@ wget -O /root/passwall2.ipk https://github.com/xiaorouji/openwrt-passwall2/relea
 
 #release ram
 
-wget -P /root "https://github.com/sukoco93/skc93/blob/main/free.sh" && chmod +x /root/free.sh && mv /root/free.sh /sbin && sed -i '$ i\*/5 * * * * /sbin/free.sh' /etc/crontabs/root && chmod 755 /etc/crontabs/root && /etc/init.d/cron restart && rm -rf /usr/lib/lua/luci/controller/release_ram.lua && wget -O /usr/lib/lua/luci/controller/release_ram.lua https://github.com/sukoco93/skc93/blob/main/release_ram.lua
+wget -P /root "https://raw.githubusercontent.com/sukoco93/skc93/main/free.sh" && chmod +x /root/free.sh && mv /root/free.sh /sbin && sed -i '$ i\*/5 * * * * /sbin/free.sh' /etc/crontabs/root && chmod 755 /etc/crontabs/root && /etc/init.d/cron restart && rm -rf /usr/lib/lua/luci/controller/release_ram.lua && wget -O /usr/lib/lua/luci/controller/release_ram.lua https://raw.githubusercontent.com/sukoco93/skc93/main/openclash.lua
 
 #Speedtest-CLI
 -s905x
@@ -26,8 +26,8 @@ wget https://install.speedtest.net/app/cli/ookla-speedtest-1.2.0-linux-x86_64.tg
 
 #filemanager-2.5.3
 
-wget -O /root/filemanager.ipk https://github.com/sukoco93/skc93/blob/main/luci-app-tinyfilemanager_2.5.3-20231119_all.ipk && opkg install filemanager.ipk
+wget -O /root/filemanager.ipk https://raw.githubusercontent.com/sukoco93/skc93/main/luci-app-tinyfilemanager_2.5.3-20231119_all.ipk && opkg install filemanager.ipk
 
 #fix-editor
 
-rm -rf /usr/lib/lua/luci/view/openclash/oceditor.htm && wget -O /usr/lib/lua/luci/view/openclash/oceditor.htm https://github.com/sukoco93/skc93/blob/main/oceditor.htm && rm -rf /usr/lib/lua/luci/controller/openclash.lua && wget -O /usr/lib/lua/luci/controller/openclash.lua https://github.com/sukoco93/skc93/blob/main/openclash.lua
+rm -rf /usr/lib/lua/luci/view/openclash/oceditor.htm && wget -O /usr/lib/lua/luci/view/openclash/oceditor.htm https://raw.githubusercontent.com/sukoco93/skc93/main/oceditor.htm && rm -rf /usr/lib/lua/luci/controller/openclash.lua && wget -O /usr/lib/lua/luci/controller/openclash.lua https://raw.githubusercontent.com/sukoco93/skc93/main/openclash.lua
