@@ -61,6 +61,8 @@ for telkomsel : udemy.com / skillacademy.com
 
 # vidio
 
-104.22.5.240
-104.22.4.240
-104.16.16.120
+104.20.46.147
+172.77.144.39
+quiz.vidio.com
+quiz.init.vidio.com
+nontontv.vidio.com
